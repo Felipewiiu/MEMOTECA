@@ -1,66 +1,166 @@
-# Memoteca
+# Memoteca — Projeto Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Memoteca é uma aplicação web desenvolvida com **Angular** para cadastro, visualização e gerenciamento de pensamentos/frases.  
+O projeto foi gerado utilizando Angular CLI e segue a estrutura padrão de aplicações Angular com separação de componentes e serviços.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Tecnologias Utilizadas
 
-## Code scaffolding
+- Angular CLI 14
+- TypeScript
+- HTML / CSS
+- RxJS
+- Karma (testes unitários)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## ▶️ Como Executar o Projeto (Ambiente de Desenvolvimento)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Execute o comando abaixo para iniciar o servidor de desenvolvimento:
 
-## Running unit tests
+```bash
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Após iniciar, acesse no navegador:
 
-## Running end-to-end tests
+```
+http://localhost:4200/
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+A aplicação será recarregada automaticamente sempre que houver alteração nos arquivos-fonte.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🏗️ Geração de Código (Scaffolding)
 
-## Fluxo de dados entre componentes
+Para criar novos elementos no projeto usando o Angular CLI:
 
-### PROPERTY BINDING
-A classe de TS é a responsável por adicionar comportameno aos elementos da página.
-uma forma de associar dados seria usando o PROPERTY BINDING
+### Criar um componente
 
-````
-  [value]="pensamento.conteudo"
-````
+```bash
+ng generate component nome-do-componente
+```
 
-### EVENT BINDING
+### Criar outros recursos
 
-È a forma de associar eventos ao HTML
+```bash
+ng generate directive|pipe|service|class|guard|interface|enum|module
+```
 
-````
- <button (click)="criarPensamento()" class="botao">Salvar</button>
-````
+### Exemplo — gerar um serviço
 
-### Two-way Data Binding
+```bash
+ng g s componentes/pensamentos/pensamento
+```
 
-Seria como se fosse uma troca de dados entre o componente e template.
+---
 
-## Diretiva
+## 📦 Build da Aplicação
 
-Diretivas são classes que conseguem modificar os elementos em uma aplicação Angular. Podemos destacar algumas como:
+Para gerar a versão de produção:
 
-* ngFor
-* ngClass
-* ngIf
-* ngFor
+```bash
+ng build
+```
 
-## Criação do componente de serviço
+Os arquivos gerados ficarão no diretório:
 
-Um componente de serviço serve para armazenar a lógica de negócio da aplicação:
+```
+dist/
+```
 
-````
- ng g s componentes/pensamentos/pensamento
-````
+---
+
+## 🧪 Testes
+
+### Testes unitários
+
+Executa os testes com Karma:
+
+```bash
+ng test
+```
+
+### Testes end-to-end (E2E)
+
+```bash
+ng e2e
+```
+
+> ⚠️ É necessário instalar previamente um pacote de testes E2E.
+
+---
+
+## 🧠 Conceitos Angular Utilizados
+
+### Property Binding
+
+Permite associar valores do componente (TypeScript) diretamente aos elementos do template (HTML).
+
+**Exemplo:**
+
+```html
+[value]="pensamento.conteudo"
+```
+
+---
+
+### Event Binding
+
+Permite associar eventos do HTML a métodos do componente.
+
+**Exemplo:**
+
+```html
+<button (click)="criarPensamento()" class="botao">
+  Salvar
+</button>
+```
+
+---
+
+### Two-Way Data Binding
+
+Permite troca bidirecional de dados entre o template e o componente.  
+O valor é atualizado no componente e refletido na tela automaticamente.
+
+---
+
+## 🧩 Diretivas Angular Utilizadas
+
+Diretivas são responsáveis por alterar comportamento ou estrutura dos elementos HTML.
+
+Principais diretivas usadas:
+
+- `ngIf` — renderização condicional
+- `ngFor` — repetição de elementos
+- `ngClass` — aplicação dinâmica de classes CSS
+
+---
+
+## 🔧 Serviços (Services)
+
+Serviços em Angular são usados para:
+
+- Centralizar regras de negócio
+- Realizar chamadas HTTP
+- Compartilhar dados entre componentes
+- Reduzir acoplamento
+
+Eles são injetados nos componentes por **injeção de dependência**.
+
+---
+
+## 📚 Ajuda da Angular CLI
+
+Para ver todos os comandos disponíveis:
+
+```bash
+ng help
+```
+
+Documentação oficial:
+
+https://angular.io/cli
