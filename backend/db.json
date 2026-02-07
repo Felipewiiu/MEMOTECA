@@ -6,28 +6,27 @@
       "autoria": "Marina Alves",
       "modelo": "modelo2",
       "favorito": false
-
     },
     {
       "id": 2,
       "conteudo": "Typescript ajuda a evitar erros",
       "autoria": "João Pedro",
       "modelo": "modelo2",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 3,
       "conteudo": "Diretivas deixam o template poderoso",
       "autoria": "Fernanda Lima",
       "modelo": "modelo2",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 4,
       "conteudo": "Services deixam o código reutilizável",
       "autoria": "Lucas Ribeiro",
       "modelo": "modelo1",
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "Aprendendo Angular",
@@ -35,13 +34,6 @@
       "modelo": "modelo2",
       "favorito": false,
       "id": 8
-    },
-    {
-      "conteudo": "Aprendendo Angular",
-      "autoria": "Dev",
-      "modelo": "modelo2",
-      "favorito": false,
-      "id": 10
     },
     {
       "conteudo": "Não há trabalho ruim, o ruim é ter que trabalhar",
