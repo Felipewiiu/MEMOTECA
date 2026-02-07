@@ -4,49 +4,58 @@
       "id": 1,
       "conteudo": "Componentização deixa tudo organizado porque divide a aplicação em partes menores, reutilizáveis e fáceis de manter. Cada componente tem sua própria responsabilidade, reduz acoplamento, melhora a leitura do código e facilita testes, evolução e colaboração entre desenvolvedores.",
       "autoria": "Marina Alves",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
+
     },
     {
       "id": 2,
       "conteudo": "Typescript ajuda a evitar erros",
       "autoria": "João Pedro",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "Diretivas deixam o template poderoso",
       "autoria": "Fernanda Lima",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 4,
       "conteudo": "Services deixam o código reutilizável",
       "autoria": "Lucas Ribeiro",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "conteudo": "Aprendendo Angular",
       "autoria": "Dev",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 8
     },
     {
       "conteudo": "Aprendendo Angular",
       "autoria": "Dev",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 10
     },
     {
       "conteudo": "Não há trabalho ruim, o ruim é ter que trabalhar",
       "autoria": "Madruguinha",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 12
     },
     {
       "conteudo": "A vingança nunca é plena mata a alma e a envenena",
       "autoria": "Madruguinha",
       "modelo": "modelo3",
-      "id": 13
+      "id": 13,
+      "favorito": false
     }
   ]
 }
