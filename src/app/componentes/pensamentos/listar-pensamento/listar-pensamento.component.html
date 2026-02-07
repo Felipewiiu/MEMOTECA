@@ -12,7 +12,16 @@
       <img src="../../../../assets/imagens/lupa.png" alt="Lupa azul">
     </div>
     <h2 class="ff-inter">Meu Mural</h2>
-    <button routerLink="/criarPensamento" class="botao">Adicionar pensamento</button>
+    <div class="botoes">
+      <button class="botao" (click)="listarPensamento()">
+        Meu mural
+      </button>
+       <button class="botao" (click)="listarFavorito()">
+        Meus favortos
+      </button>
+      <button routerLink="/criarPensamento" class="botao">Novo pensamento</button>
+    </div>
+
   </header>
   <div class="mural" *ngIf="listaPensamentos.length > 0, else semPensamentos">
     <div *ngFor="let pensamento of listaPensamentos">
@@ -24,6 +33,8 @@
   [haMaisPensamentos]="haMaisPensamentos"
   (click)="carregarMaisPensamentos()">
 </app-botao-carregar-mais>
+
+
 <ng-template #semPensamentos>
   <div class="ff-inter sem-pensamentos">
     <p>Ainda não há pensamentos cadastrados!</p>
