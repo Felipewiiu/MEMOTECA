@@ -153,6 +153,30 @@ Eles são injetados nos componentes por **injeção de dependência**.
 
 ---
 
+## Validação de formulário
+
+Para criar validação de formulário é importar a classe `FormGroup` e `FormBuilder`
+````
+  ngOnInit(): void {
+    this.formulario = this.formBuilder.group(
+      {
+      conteudo: ['', Validators.compose(
+        [
+        Validators.required,
+        Validators.pattern(/(.|\s)*\S(.|\s)*/),
+        Validators.minLength(3)
+      ])],
+
+      autoria: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(3)
+      ])],
+
+      modelo: ['modelo1']
+    })
+  }
+  ````
+
 ## 📚 Ajuda da Angular CLI
 
 Para ver todos os comandos disponíveis:

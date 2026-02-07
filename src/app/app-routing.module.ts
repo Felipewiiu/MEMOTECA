@@ -1,6 +1,6 @@
+import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { ExcluirPensamentoComponent } from './componentes/pensamentos/excluir-pensamento/excluir-pensamento.component';
 import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pensamento/editar-pensamento.component';
@@ -10,27 +10,23 @@ const routes: Routes = [
     path: '',
     redirectTo: 'listarPensamento',
     pathMatch: 'full'
-    //Essa configuração serve para cria a página de entrada
-    //O pathMatch serve para dizer o que considerar da url base
   },
   {
     path: 'criarPensamento',
     component: CriarPensamentoComponent
   },
-
   {
     path: 'listarPensamento',
     component: ListarPensamentoComponent
   },
   {
-    path: 'pensamentos/excluirPensamentos/:id',
+    path: 'pensamentos/excluirPensamento/:id',
     component: ExcluirPensamentoComponent
   },
   {
-    path: 'pensamentos/editarPensamentos/:id',
+    path: 'pensamentos/editarPensamento/:id',
     component: EditarPensamentoComponent
-  },
-
+  }
 
 ];
 

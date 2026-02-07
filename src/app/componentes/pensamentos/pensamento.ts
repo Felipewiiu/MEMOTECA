@@ -4,3 +4,5 @@ export interface Pensamento {
   autoria: string
   modelo: string
 }
+
+

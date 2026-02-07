@@ -1,5 +1,5 @@
+import { Pensamento } from './../pensamento';
 import { Component, Input, OnInit } from '@angular/core';
-import { Pensamento } from '../Pensamento';
 
 @Component({
   selector: 'app-pensamento',
@@ -8,26 +8,22 @@ import { Pensamento } from '../Pensamento';
 })
 export class PensamentoComponent implements OnInit {
 
-
   @Input() pensamento: Pensamento = {
     id: 0,
-    conteudo: '',
-    autoria: '',
-    modelo: '',
+    conteudo: 'I love Angular',
+    autoria: 'Nay',
+    modelo: 'modelo3'
   }
-
-  // Preciso que os dados da classe pai
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  larguraPensamento() : string {
-    if(this.pensamento.conteudo.length >= 256){
+  larguraPensamento(): string {
+    if(this.pensamento.conteudo.length >= 256) {
       return 'pensamento-g'
     }
-
     return 'pensamento-p'
   }
 
