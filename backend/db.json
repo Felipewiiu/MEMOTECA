@@ -19,14 +19,14 @@
       "conteudo": "Diretivas deixam o template poderoso",
       "autoria": "Fernanda Lima",
       "modelo": "modelo2",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 4,
       "conteudo": "Services deixam o código reutilizável",
       "autoria": "Lucas Ribeiro",
       "modelo": "modelo1",
-      "favorito": true
+      "favorito": false
     },
     {
       "conteudo": "Aprendendo Angular",
