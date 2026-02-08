@@ -177,6 +177,10 @@ Para criar validação de formulário é importar a classe `FormGroup` e `FormBu
   }
   ````
 
+## Como funciona um componente?
+
+![alt text](image.png)
+
 ## 📚 Ajuda da Angular CLI
 
 Para ver todos os comandos disponíveis:
